@@ -1,0 +1,37 @@
+.category{
+  width: 600px;
+  height: 400px;
+  padding: 20px 20px;
+  background-color: lightgray;
+
+
+  &__title{
+    margin-bottom: 20px;
+    color: red;
+  }
+
+  &__list{
+    width: 160px;
+    list-style: none;
+  }
+
+  &__item{
+    padding: 6px;
+    text-align: center;
+    text-transform: uppercase;
+    color: aqua;
+    background-color: gray;
+    cursor: pointer;
+
+    &:not(:last-child){
+      margin-bottom: 2px;
+    }
+
+    &:hover,
+    &:focus{
+      color: black;
+      background-color: lightgray;
+      transform: translateX(25%);
+    }
+  }
+}
