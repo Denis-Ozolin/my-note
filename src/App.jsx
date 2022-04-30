@@ -1,5 +1,5 @@
 import Categories from './components/Categories';
-const categories = ['Hostings', 'Libraries', 'Settings', 'Services'];
+import categories from './db.json';
 
 function App() {
   return (

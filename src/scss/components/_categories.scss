@@ -16,11 +16,13 @@
   }
 
   &__item{
+    position: relative;
     padding: 6px;
     text-align: center;
     text-transform: uppercase;
     color: aqua;
     background-color: gray;
+    transition: .5s;
     cursor: pointer;
 
     &:not(:last-child){
@@ -35,3 +37,39 @@
     }
   }
 }
+
+.subcategory__list{
+  position: absolute;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+
+  &--active{
+    position: absolute;
+    top: 0;
+    right: -101%;
+    width: 200px;
+    list-style: none;
+  }
+}
+
+  .subcategory__item {
+    padding: 6px;
+    text-align: left;
+
+    &:not(:last-child) {
+      margin-bottom: 2px;
+    }
+
+    &:hover,
+    &:focus{
+      color: aqua;
+      background-color: gray;
+    }
+  }
