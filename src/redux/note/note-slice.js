@@ -1,20 +1,19 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-import noteOperations from "./note-operations";
-
 const initialState = {
   selectedCategory: null,
-  toggle: false,
 };
 
 const noteSlice = createSlice({
   name: "note",
   initialState,
-  extraReducers: {
-    [noteOperations.logger.fulfilled](state, action) {
-      state.toggle = !state.toggle;
+  reducers: {
+    addCategory(state, action) {
+      state.selectedCategory = action.payload;
     },
   },
 });
 
 export default noteSlice.reducer;
+
+export const { addCategory } = noteSlice.actions;

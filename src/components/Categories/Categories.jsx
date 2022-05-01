@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function Categories({ items }) {
+function Categories({ items, selectContent }) {
   const [activeId, setActiveId] = useState(null);
 
 
@@ -10,10 +10,6 @@ function Categories({ items }) {
 
   const removeActiveId = () => {
     setActiveId(null);
-  }
-
-  const openCategory = (name) => {
-    alert(`${name} is open!`)
   }
 
   return (
@@ -27,7 +23,7 @@ function Categories({ items }) {
           {obj.name}
           <ul className={activeId === obj.id? 'category__sublist--active': 'category__sublist' }>
             {obj.items.map(item => <li
-              onClick={() => openCategory(item.name)}
+              onClick={() => selectContent(item)}
               key={item.id}
               className='category__inner-item'>
               {item.name}
