@@ -1,0 +1,15 @@
+.content{
+  background-color: gray;
+  width: 60%;
+  margin-top: 40px;
+  margin-left: auto;
+  padding: 20px;
+  border-radius: 10px;
+
+  &__title{
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+  }
+}

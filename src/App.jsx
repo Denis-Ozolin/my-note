@@ -1,11 +1,14 @@
-import Categories from './components/Categories';
+import {Categories, Content} from './components';
 import categories from './db.json';
 
 function App() {
   return (
     <div className="wrapper">
       <div className="container">
-        <Categories items={categories}/>
+        <section className='section'>
+          <Categories items={categories} />
+          <Content/>
+        </section>
       </div>
     </div>
   );
