@@ -1,25 +1,26 @@
+@import '../variables';
+
 .category{
   width: 420px;
-  padding: 40px 6px;
-  font-size: 18px;
-  border: 1px solid red;
+  font-size: 20px;
 
   &__list{
-    width: 180px;
+    width: 200px;
     list-style: none;
   }
 
   &__item{
     position: relative;
-    padding: 4px 6px;
+    padding: 4px 0;
     border-radius: 5px;
     border-radius: 5px;
     text-align: center;
     text-transform: uppercase;
-    color: aqua;
-    background-color: gray;
-    transition: .5s;
-    opacity: .8;
+    color: $accentColor;
+    background-color: $transparentBg;
+      transition: color $duration ease-in-out, 
+      background-color, $duration ease-in-out, 
+      translate $duration ease-in-out;
     cursor: pointer;
 
     &:not(:last-child){
@@ -28,7 +29,7 @@
 
     &:hover,
     &:focus{
-      color: #ece2e2;
+      color: $lightTextColor;
       background-color: inherit;
       transform: translateX(25%);
     }
@@ -49,18 +50,22 @@
     &--active {
       position: absolute;
       top: 0;
-      right: -101%;
+      right: -89%;
       width: 220px;
       list-style: none;
     }
   }
 
   &__inner-item {
-    padding: 4px 6px;
+    padding: 4px 10px;
     text-align: left;
     text-transform: none;
-    color: #ece2e2;
-  
+    color: $lightTextColor;
+    transition: color $duration ease-in-out,
+      background-color $duration ease-in-out,
+      translate $duration ease-in-out;
+    cursor: pointer;
+
     &:not(:last-child) {
       margin-bottom: 8px;
     }
@@ -68,8 +73,8 @@
     &:hover,
     &:focus {
       border-radius: 5px;
-      color: aqua;
-      background-color: gray;
+      color: $accentColor;
+      background-color: $transparentBg;
     }
   }
 }

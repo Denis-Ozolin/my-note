@@ -12,6 +12,10 @@ function Categories({ items }) {
     setActiveId(null);
   }
 
+  const openCategory = (name) => {
+    alert(`${name} is open!`)
+  }
+
   return (
     <div className='category'>
       <ul className='category__list'>
@@ -22,7 +26,12 @@ function Categories({ items }) {
           className='category__item'>
           {obj.name}
           <ul className={activeId === obj.id? 'category__sublist--active': 'category__sublist' }>
-            {obj.items.map(item => <li key={item.id} className='category__inner-item'>{item.name}</li>)}
+            {obj.items.map(item => <li
+              onClick={() => openCategory(item.name)}
+              key={item.id}
+              className='category__inner-item'>
+              {item.name}
+            </li>)}
           </ul>
         </li>)}
       </ul>
