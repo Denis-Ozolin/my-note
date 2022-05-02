@@ -3,15 +3,21 @@
 .content{
   background-color: $transparentBg;
   width: 58vw;
-  min-height: 540px;
+  min-height: 86vh;
   margin-left: auto;
   padding: 20px;
   border-radius: 10px;
 
   &__title{
+    margin-bottom: 30px;
     font-size: 24px;
     font-weight: 600;
     color: $lightTextColor;
     text-align: center;
+  }
+
+  &__text{
+    color: $lightTextColor;
+    font-size: 18px;
   }
 }

@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
 
-import { Categories, Content } from './components';
+import { Categories, Content, DefaultContent } from './components';
 import { addCategory } from './redux/note/note-slice';
 import categories from './db.json';
 
@@ -17,8 +17,8 @@ function App() {
     <div className="wrapper">
       <div className="container">
         <section className='section'>
-          <Categories items={categories} selectContent={onSelectContent}/>
-          <Content content={note}/>
+          <Categories items={categories} selectContent={onSelectContent} />
+          {!note? <DefaultContent/>: <Content content={note}/>}
         </section>
       </div>
     </div>

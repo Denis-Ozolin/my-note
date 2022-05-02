@@ -5,15 +5,44 @@
     "items": [
       {
         "id": 1,
-        "name": "Netlify"
+        "name": "Netlify",
+        "notes": [
+          {
+            "instruction": "Install globally for the first time:",
+            "npm": "$ npm install netlify-cli -g"
+          },
+          {
+            "instruction": "Account login:",
+            "npm": "$ netlify login"
+          },
+          {
+            "instruction": "Change account:",
+            "npm": "$ netlify switch"
+          },
+          {
+            "instruction": "At the first deploy this app:",
+            "npm": "$ npm run deploy",
+            "descr": "+ Create & configure a new site n\team -> default (Enter),n\name -> uniq-app-name.\nIn the live URL field link to live page."
+          },
+          {
+            "instruction": "Open app:",
+            "npm": "$ netlify open --site"
+          }
+        ],
+        "scripts": {
+          "path": "package.json -> scripts",
+          "code": "predeploy: npm run build, \n deploy': 'netlify deploy -p"
+        }
       },
       {
         "id": 2,
-        "name": "Heroku"
+        "name": "Heroku",
+        "content": "Install the Heroku CLI Download and install the Heroku CLI."
       },
       {
         "id": 3,
-        "name": "GitHub-Pages"
+        "name": "GitHub-Pages",
+        "content": ""
       }
     ]
   },
@@ -23,15 +52,18 @@
     "items": [
       {
         "id": 1,
-        "name": "React"
+        "name": "React",
+        "content": ""
       },
       {
         "id": 2,
-        "name": "Redux"
+        "name": "Redux",
+        "content": ""
       },
       {
         "id": 3,
-        "name": "json-sever"
+        "name": "json-sever",
+        "content": ""
       }
     ]
   },
@@ -41,15 +73,18 @@
     "items": [
       {
         "id": 1,
-        "name": "VSCode Hotkey"
+        "name": "VSCode Hotkey",
+        "content": ""
       },
       {
         "id": 2,
-        "name": "GitHub with Terminal"
+        "name": "GitHub with Terminal",
+        "content": ""
       },
       {
         "id": 3,
-        "name": "VSCode Snippets"
+        "name": "VSCode Snippets",
+        "content": ""
       }
     ]
   },
@@ -59,11 +94,13 @@
     "items": [
       {
         "id": 1,
-        "name": "SendGrid"
+        "name": "SendGrid",
+        "content": ""
       },
       {
         "id": 2,
-        "name": "Postman"
+        "name": "Postman",
+        "content": ""
       }
     ]
   }
