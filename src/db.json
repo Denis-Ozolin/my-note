@@ -8,41 +8,77 @@
         "name": "Netlify",
         "notes": [
           {
+            "id": 1,
             "instruction": "Install globally for the first time:",
             "npm": "$ npm install netlify-cli -g"
           },
           {
+            "id": 2,
             "instruction": "Account login:",
             "npm": "$ netlify login"
           },
           {
+            "id": 3,
             "instruction": "Change account:",
             "npm": "$ netlify switch"
           },
           {
+            "id": 4,
             "instruction": "At the first deploy this app:",
-            "npm": "$ npm run deploy",
-            "descr": "+ Create & configure a new site n\team -> default (Enter),n\name -> uniq-app-name.\nIn the live URL field link to live page."
+            "npm": "$ npm run deploy"
           },
           {
+            "id": 5,
             "instruction": "Open app:",
             "npm": "$ netlify open --site"
           }
         ],
-        "scripts": {
-          "path": "package.json -> scripts",
-          "code": "predeploy: npm run build, \n deploy': 'netlify deploy -p"
-        }
+        "description": "+ Create & configure a new site n\team -> default (Enter),n\name -> uniq-app-name.\nIn the live URL field link to live page.",
+        "scripts": [
+          {
+            "id": 1,
+            "path": "package.json -> scripts",
+            "code": "predeploy: npm run build, \n deploy: netlify deploy -p"
+          }
+        ]
       },
       {
         "id": 2,
         "name": "Heroku",
-        "content": "Install the Heroku CLI Download and install the Heroku CLI."
+        "notes": [
+          {
+            "id": 1,
+            "instruction": "Account login:",
+            "npm": "$ heroku login"
+          },
+          {
+            "id": 2,
+            "instruction": "Connect with your Git repository:",
+            "npm": "$ heroku git:remote -a heroku-project-name"
+          },
+          {
+            "id": 3,
+            "instruction": "Commit your code to the repository and deploy it to Heroku using Git:",
+            "npm": "$ git push heroku main"
+          }
+        ],
+        "description": "Download and install the Heroku CLI."
       },
       {
         "id": 3,
         "name": "GitHub-Pages",
-        "content": ""
+        "scripts": [
+          {
+            "id": 1,
+            "path": "-> package.json",
+            "code": "hompage: https://account-name.github.io/repo-name"
+          },
+          {
+            "id": 2,
+            "path": "package.json -> scripts",
+            "code": "predeploy: npm run build, \n deploy: gh-pages -d build"
+          }
+        ]
       }
     ]
   },
@@ -52,18 +88,77 @@
     "items": [
       {
         "id": 1,
-        "name": "React",
-        "content": ""
+        "name": "ESLint Husky Prettier",
+        "notes": [
+          {
+            "id": 1,
+            "instruction": "Installing dependencies:",
+            "npm": "npm install --save-dev prettier eslint"
+          },
+          {
+            "id": 2,
+            "instruction": "init lint-staged & husky:",
+            "npm": "npx mrm@2 lint-staged"
+          },
+          {
+            "instruction": "Setting up pre-commit hooks.",
+            "link": "https://github.com/goitacademy/react-lint-staged-workshop"
+          }
+        ]
       },
       {
         "id": 2,
         "name": "Redux",
-        "content": ""
+        "notes": [
+          {
+            "id": 1,
+            "instruction": "Install Redux:",
+            "npm": "$ npm install redux"
+          },
+          {
+            "id": 2,
+            "instruction": "Redux for React:",
+            "npm": "$ npm install react-redux"
+          },
+          {
+            "id": 3,
+            "instruction": "Redux Toolkit:",
+            "npm": "$ npm install @reduxjs/toolkit"
+          },
+          {
+            "id": 4,
+            "instruction": "Redux with Local Storage:",
+            "npm": "$ npm install redux-persist"
+          },
+          {
+            "id": 5,
+            "instruction": "Actions are output to the console:",
+            "npm": "$ npm install --save redux-logger"
+          }
+        ]
       },
       {
         "id": 3,
         "name": "json-sever",
-        "content": ""
+        "notes": [
+          {
+            "id": 1,
+            "instruction": "Install json-server & indicate the path to DataBase:",
+            "npm": "$ npx json-server --watch public/db.json"
+          },
+          {
+            "id": 2,
+            "instruction": "start json-server",
+            "npm": "$ npm run json-server"
+          }
+        ],
+        "scripts": [
+          {
+            "id": 1,
+            "path": "package.json -> scripts",
+            "code": "json-server: npx json-server --watch public/db.json --port=3001"
+          }
+        ]
       }
     ]
   },
@@ -74,17 +169,142 @@
       {
         "id": 1,
         "name": "VSCode Hotkey",
-        "content": ""
+        "notes": [
+          {
+            "id": 1,
+            "instruction": "Copies classes in HTML",
+            "shortcut": "ctrl + alt + x"
+          },
+          {
+            "id": 2,
+            "instruction": "Lines along the length of the window",
+            "shortcut": "alt + z"
+          },
+          {
+            "id": 3,
+            "instruction": "File search",
+            "shortcut": "ctrl + p"
+          },
+          {
+            "id": 4,
+            "instruction": "Search by input",
+            "shortcut": "ctrl + f"
+          },
+          {
+            "id": 5,
+            "instruction": "Select",
+            "shortcut": "ctrl + d"
+          },
+          {
+            "id": 6,
+            "instruction": "Select",
+            "shortcut": "ctrl + d"
+          },
+          {
+            "id": 7,
+            "instruction": "For Settings Sync tools",
+            "shortcut": "Upload Key : shift + alt + u \n Download Key : shift + alt + d"
+          }
+        ]
       },
       {
         "id": 2,
         "name": "GitHub with Terminal",
-        "content": ""
+        "notes": [
+          {
+            "id": 1,
+            "instruction": "Cloning a repository",
+            "npm": "$ git clone repo-link"
+          },
+          {
+            "id": 2,
+            "instruction": "Change status",
+            "link": "$ git status"
+          },
+          {
+            "id": 3,
+            "instruction": "Change branch",
+            "npm": "$ git checkout name-branch"
+          },
+          {
+            "id": 4,
+            "instruction": "Create new branch",
+            "npm": "$ git checkout -b name-branch"
+          },
+          {
+            "id": 5,
+            "instruction": "Delete branch",
+            "npm": "$ git branch --delete name-branch"
+          },
+          {
+            "id": 6,
+            "instruction": "Download latest changes",
+            "npm": "$ git pull"
+          },
+          {
+            "id": 7,
+            "instruction": "Add changes",
+            "npm": "$ git add ."
+          },
+          {
+            "id": 8,
+            "instruction": "Create commit",
+            "npm": "$ git commit -m 'name-changes'"
+          },
+          {
+            "id": 9,
+            "instruction": "Send commit",
+            "npm": "$ git push"
+          },
+          {
+            "id": 10,
+            "instruction": "Send commit to selected branch",
+            "npm": "$ git push --set-upstream origin branch-name"
+          },
+          {
+            "id": 11,
+            "instruction": "Back to previous commit",
+            "npm": "$ git checkout ."
+          }
+        ]
       },
       {
         "id": 3,
         "name": "VSCode Snippets",
-        "content": ""
+        "description": "Snippets for ReactJS",
+        "notes": [
+          {
+            "id": 1,
+            "instruction": "import moduleName from 'module';",
+            "shortcut": "imp"
+          },
+          {
+            "id": 2,
+            "instruction": "export default moduleName;",
+            "shortcut": "exp"
+          },
+          {
+            "id": 3,
+            "instruction": "const [first, setfirst] = useState(second);",
+            "shortcut": "ust"
+          },
+          {
+            "id": 4,
+            "instruction": "react functional component template;",
+            "shortcut": "rfce"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Chrome Hotkey",
+        "notes": [
+          {
+            "id": 1,
+            "instruction": "Сopy text from video or screenshot",
+            "shortcut": "ctrl + v"
+          }
+        ]
       }
     ]
   },
@@ -94,13 +314,11 @@
     "items": [
       {
         "id": 1,
-        "name": "SendGrid",
-        "content": ""
+        "name": "SendGrid"
       },
       {
         "id": 2,
-        "name": "Postman",
-        "content": ""
+        "name": "Postman"
       }
     ]
   }
