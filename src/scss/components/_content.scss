@@ -1,23 +1,76 @@
 @import '../variables';
 
 .content{
-  background-color: $transparentBg;
   width: 58vw;
   min-height: 86vh;
   margin-left: auto;
-  padding: 20px;
+  padding: 20px 40px;
   border-radius: 10px;
+  background-color: $transparentBg;
 
   &__title{
     margin-bottom: 30px;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 600;
-    color: $lightTextColor;
     text-align: center;
+    color: $accentColor;
   }
 
-  &__text{
-    color: $lightTextColor;
-    font-size: 18px;
+  &__description{
+    margin-bottom: 26px;
+    font-size: 24px;
+    color: #9c7a7a;
+  }
+
+  &__note-list,
+  &__script-list{
+    margin-bottom: 30px;
+  }
+
+  &__note,
+  &__script {
+    list-style: none;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__box{
+    display: flex;
+    align-items: center;
+  }
+
+  &__marker{
+    display: block;
+    width: 6px;
+    height: 6px;
+    margin-top: -5px;
+    margin-right: 10px;
+    background-color: $accentColor;
+  }
+
+  &__instruction,
+  &__path {
+    margin-bottom: 8px;
+  }
+
+  &__npm{
+    font-size: 24px;
+    color: #75b575;
+  }
+  
+  &__link {
+    color: $accentColor;
+  }
+  
+  &__shortcut {
+    font-size: 24px;
+    color: #acacac;
+  }
+
+  &__code{
+    font-size: 24px;
+    color: #8fadca;
   }
 }

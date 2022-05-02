@@ -6,6 +6,7 @@
       {
         "id": 1,
         "name": "Netlify",
+        "description": "+ Create & configure a new site, team -> default (Enter), name -> uniq-app-name. In the live URL field link to live page.",
         "notes": [
           {
             "id": 1,
@@ -33,18 +34,18 @@
             "npm": "$ netlify open --site"
           }
         ],
-        "description": "+ Create & configure a new site n\team -> default (Enter),n\name -> uniq-app-name.\nIn the live URL field link to live page.",
         "scripts": [
           {
             "id": 1,
             "path": "package.json -> scripts",
-            "code": "predeploy: npm run build, \n deploy: netlify deploy -p"
+            "code": "predeploy: npm run build, deploy: netlify deploy -p"
           }
         ]
       },
       {
         "id": 2,
         "name": "Heroku",
+        "description": "Download and install the Heroku CLI.",
         "notes": [
           {
             "id": 1,
@@ -61,8 +62,7 @@
             "instruction": "Commit your code to the repository and deploy it to Heroku using Git:",
             "npm": "$ git push heroku main"
           }
-        ],
-        "description": "Download and install the Heroku CLI."
+        ]
       },
       {
         "id": 3,
@@ -101,6 +101,7 @@
             "npm": "npx mrm@2 lint-staged"
           },
           {
+            "id": 3,
             "instruction": "Setting up pre-commit hooks.",
             "link": "https://github.com/goitacademy/react-lint-staged-workshop"
           }
@@ -219,7 +220,7 @@
           {
             "id": 2,
             "instruction": "Change status",
-            "link": "$ git status"
+            "npm": "$ git status"
           },
           {
             "id": 3,
@@ -296,7 +297,7 @@
         ]
       },
       {
-        "id": 3,
+        "id": 4,
         "name": "Chrome Hotkey",
         "notes": [
           {
