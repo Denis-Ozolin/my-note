@@ -18,8 +18,18 @@
 
   &__description{
     margin-bottom: 26px;
+  }
+
+  &__text,
+  &__link,
+  &__npm,
+  &__shortcut,
+  &__code{
     font-size: 24px;
-    color: #9c7a7a;
+  }
+
+  &__text{
+    color: #ddd66d;
   }
 
   &__note-list,
@@ -56,7 +66,6 @@
   }
 
   &__npm{
-    font-size: 24px;
     color: #75b575;
   }
   
@@ -65,12 +74,10 @@
   }
   
   &__shortcut {
-    font-size: 24px;
     color: #acacac;
   }
 
   &__code{
-    font-size: 24px;
     color: #8fadca;
   }
 }

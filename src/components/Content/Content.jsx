@@ -6,7 +6,13 @@ function Content({ content }) {
   return (
     <div className='content'>
       {content && <h2 className='content__title'>{name}</h2>}
-      {description && <p className='content__description'>{description}</p>}
+        
+      {description &&
+        <div className='content__description'>
+          {description.map((text, index) =>
+            <p key={index} className='content__text'>{text}</p>
+          )}
+        </div>}  
       {notes && <ul className='content__note-list'>
         {notes.map(({ id, instruction, npm, link, shortcut }) => (
           <li key={id} className='content__note'>
@@ -22,10 +28,10 @@ function Content({ content }) {
         ))}
       </ul>}
       {scripts && <ul className='content__script-list'>
-        {scripts.map(({ id, path, code }) => (
+        {scripts.map(({ id, path, codes }) => (
           <li key={id} className='content__script'>
             <p className='content__path'>{path}</p>
-            <p className='content__code'>{code}</p>
+            {codes.map((code, index) => <p key={index} className='content__code'>{code}</p>)}
           </li>
         ))}  
       </ul>}

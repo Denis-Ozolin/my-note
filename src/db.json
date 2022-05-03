@@ -6,7 +6,12 @@
       {
         "id": 1,
         "name": "Netlify",
-        "description": "+ Create & configure a new site, team -> default (Enter), name -> uniq-app-name. In the live URL field link to live page.",
+        "description": [
+          "At the first deployment, create project on Netlify:",
+          "+ Create & configure a new site (Enter),",
+          "team -> default (Enter), name -> uniq-app-name (Enter).",
+          "In the live URL field link to live page."
+        ],
         "notes": [
           {
             "id": 1,
@@ -25,7 +30,7 @@
           },
           {
             "id": 4,
-            "instruction": "At the first deploy this app:",
+            "instruction": "deploy app to Netlifi hosting:",
             "npm": "$ npm run deploy"
           },
           {
@@ -38,14 +43,19 @@
           {
             "id": 1,
             "path": "package.json -> scripts",
-            "code": "predeploy: npm run build, deploy: netlify deploy -p"
+            "codes": [
+              "predeploy: npm run build,",
+              "deploy: netlify deploy -p"
+            ]
           }
         ]
       },
       {
         "id": 2,
         "name": "Heroku",
-        "description": "Download and install the Heroku CLI.",
+        "description": [
+          "Download and install the Heroku CLI."
+        ],
         "notes": [
           {
             "id": 1,
@@ -71,12 +81,17 @@
           {
             "id": 1,
             "path": "-> package.json",
-            "code": "hompage: https://account-name.github.io/repo-name"
+            "codes": [
+              "hompage: https://account-name.github.io/repo-name"
+            ]
           },
           {
             "id": 2,
             "path": "package.json -> scripts",
-            "code": "predeploy: npm run build, \n deploy: gh-pages -d build"
+            "codes": [
+              "predeploy: npm run build",
+              "deploy: gh-pages -d build"
+            ]
           }
         ]
       }
@@ -93,17 +108,17 @@
           {
             "id": 1,
             "instruction": "Installing dependencies:",
-            "npm": "npm install --save-dev prettier eslint"
+            "npm": "$ npm install --save-dev prettier eslint"
           },
           {
             "id": 2,
             "instruction": "init lint-staged & husky:",
-            "npm": "npx mrm@2 lint-staged"
+            "npm": "$ npx mrm@2 lint-staged"
           },
           {
             "id": 3,
             "instruction": "Setting up pre-commit hooks.",
-            "link": "https://github.com/goitacademy/react-lint-staged-workshop"
+            "links": "https://github.com/goitacademy/react-lint-staged-workshop"
           }
         ]
       },
@@ -157,7 +172,9 @@
           {
             "id": 1,
             "path": "package.json -> scripts",
-            "code": "json-server: npx json-server --watch public/db.json --port=3001"
+            "codes": [
+              "json-server: npx json-server --watch public/db.json --port=3001"
+            ]
           }
         ]
       }
@@ -198,13 +215,8 @@
           },
           {
             "id": 6,
-            "instruction": "Select",
-            "shortcut": "ctrl + d"
-          },
-          {
-            "id": 7,
             "instruction": "For Settings Sync tools",
-            "shortcut": "Upload Key : shift + alt + u \n Download Key : shift + alt + d"
+            "shortcut": "Upload Key : shift + alt + u Download Key : shift + alt + d"
           }
         ]
       },
@@ -272,7 +284,9 @@
       {
         "id": 3,
         "name": "VSCode Snippets",
-        "description": "Snippets for ReactJS",
+        "description": [
+          "Snippets for ReactJS"
+        ],
         "notes": [
           {
             "id": 1,
@@ -302,8 +316,8 @@
         "notes": [
           {
             "id": 1,
-            "instruction": "Сopy text from video or screenshot",
-            "shortcut": "ctrl + v"
+            "instruction": "Blackbox tools. Сopy text from video or screenshot",
+            "shortcut": "alt + s"
           }
         ]
       }
