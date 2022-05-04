@@ -2,11 +2,13 @@
 
 .content{
   width: 58vw;
-  min-height: 86vh;
+  min-height: 68vh;
   margin-left: auto;
   padding: 20px 40px;
   border-radius: 10px;
   background-color: $transparentBg;
+  -webkit-box-shadow: 5px 5px 15px 5px $darkTextColor;
+  box-shadow: 5px 5px 15px 5px $darkTextColor;
 
   &__title{
     margin-bottom: 30px;
@@ -25,6 +27,7 @@
   &__npm,
   &__shortcut,
   &__code{
+    margin-left: 16px;
     font-size: 24px;
   }
 
@@ -70,7 +73,7 @@
   }
   
   &__link {
-    color: $accentColor;
+    color: #5656ffad;
   }
   
   &__shortcut {

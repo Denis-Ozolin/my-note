@@ -21,6 +21,8 @@
       transition: color $duration ease-in-out, 
       background-color, $duration ease-in-out, 
       translate $duration ease-in-out;
+    -webkit-box-shadow: 4px 4px 15px 2px $darkTextColor;
+    box-shadow: 4px 4px 15px 2px $darkTextColor;
     cursor: pointer;
 
     &:not(:last-child){
@@ -32,6 +34,7 @@
       color: $lightTextColor;
       background-color: inherit;
       transform: translateX(25%);
+      box-shadow: none;
     }
   }
 
@@ -64,6 +67,8 @@
     transition: color $duration ease-in-out,
       background-color $duration ease-in-out,
       translate $duration ease-in-out;
+    -webkit-box-shadow: 4px 4px 15px 2px $darkTextColor;
+    box-shadow: 4px 4px 15px 2px $darkTextColor;
     cursor: pointer;
 
     &:not(:last-child) {

@@ -1,12 +1,11 @@
 import { useSelector, useDispatch } from 'react-redux';
 
-import { Categories, Content, DefaultContent } from './components';
+import { Header, Categories, Content, DefaultContent } from './components';
 import { addCategory } from './redux/note/note-slice';
 import categories from './db.json';
 
 function App() {
   const dispatch = useDispatch();
-
   const note = useSelector(state => state.note.selectedCategory);
 
   const onSelectContent = (obj) => {
@@ -15,6 +14,7 @@ function App() {
 
   return (
     <div className="wrapper">
+        <Header/>
       <div className="container">
         <section className='section'>
           <Categories items={categories} selectContent={onSelectContent} />

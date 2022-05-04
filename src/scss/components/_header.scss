@@ -1,0 +1,61 @@
+@import '../variables';
+
+.header{
+  padding: 30px 0;
+  background-color: $transparentBg;
+  -webkit-box-shadow: 5px 5px 15px 5px $darkTextColor;
+  box-shadow: 5px 5px 15px 5px $darkTextColor;
+
+  &__container{
+    display: flex;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
+  &__title{
+    color: $accentColor;
+    font-family:'Courier New', Courier, monospace;
+    color: $transparentBg;
+    text-shadow: 2px 2px 0 $accentColor,
+    2px -2px 0 $accentColor,
+    -2px 2px 0 $accentColor,
+    -2px -2px 0 $accentColor,
+    2px 0px 0 $accentColor,
+    0px 2px 0 $accentColor,
+    -2px 0px 0 $accentColor,
+    0px -2px 0 $accentColor;
+  }
+
+  &__settings{
+    margin-left: auto;
+  }
+
+  &__icon{
+    // animation-name: rotation;
+    // animation-duration: 10s;
+    // animation-iteration-count: infinite;
+    // animation-timing-function: linear;
+  
+
+        &:hover,
+        &:focus {
+              animation-name: rotation;
+              animation-duration: 10s;
+              animation-iteration-count: infinite;
+              animation-timing-function: linear;
+
+
+          transform: rotate(360deg);
+          @keyframes rotation {
+            0% {
+              transform: rotate(0deg);
+            }
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+        }
+      }
+  }

@@ -3,7 +3,6 @@ import { useState } from 'react';
 function Categories({ items, selectContent }) {
   const [activeId, setActiveId] = useState(null);
 
-
   const assignActiveId = (id) => {
     setActiveId(id);
   }

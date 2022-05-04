@@ -25,16 +25,21 @@
           },
           {
             "id": 3,
+            "instruction": "Check account information:",
+            "npm": "$ netlify status"
+          },
+          {
+            "id": 4,
             "instruction": "Change account:",
             "npm": "$ netlify switch"
           },
           {
-            "id": 4,
-            "instruction": "deploy app to Netlifi hosting:",
+            "id": 5,
+            "instruction": "Deploy app to Netlifi hosting:",
             "npm": "$ npm run deploy"
           },
           {
-            "id": 5,
+            "id": 6,
             "instruction": "Open app:",
             "npm": "$ netlify open --site"
           }
@@ -118,7 +123,7 @@
           {
             "id": 3,
             "instruction": "Setting up pre-commit hooks.",
-            "links": "https://github.com/goitacademy/react-lint-staged-workshop"
+            "link": "https://github.com/goitacademy/react-lint-staged-workshop"
           }
         ]
       },
