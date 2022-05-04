@@ -1,7 +1,8 @@
 import React from 'react'
 
 import Button from '../Button';
-import settingsIcon from '../../assets/images/settings.png';
+// import settingsIcon from '../../assets/images/settings.png';
+import editIcon from '../../assets/images/edit.svg';
 
 function Header() {
   return (
@@ -9,8 +10,8 @@ function Header() {
       <div className='header__container'>
         <h1 className='header__title'>MyNote</h1>
         <div className="header__settings">
-          <Button className='button__settings'>
-            <img src={settingsIcon} className='header__icon' alt="settings icon" />
+          <Button className='button__edit'>
+            <img src={editIcon} className='header__icon' alt="edit icon" />
           </Button>
         </div>
       </div>
