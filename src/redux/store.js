@@ -12,6 +12,7 @@ import {
 } from "redux-persist";
 
 import { noteReducer } from "./note";
+import { editReducer } from "./edit";
 
 const notesPersistConfig = {
   key: "note",
@@ -21,6 +22,7 @@ const notesPersistConfig = {
 
 const rootReducer = combineReducers({
   note: persistReducer(notesPersistConfig, noteReducer),
+  edit: editReducer,
 });
 
 export const store = configureStore({

@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 
 import { Header, Categories, Content, DefaultContent } from './components';
-import { addCategory } from './redux/note/note-slice';
+import { addCategory } from './redux/note/noteSlice';
 import categories from './db.json';
 
 function App() {

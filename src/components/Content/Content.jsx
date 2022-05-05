@@ -1,5 +1,3 @@
-import { memo } from 'react';
-
 function Content({ content }) {
   const { name, description, notes, scripts } = content;
 
@@ -39,4 +37,4 @@ function Content({ content }) {
   )
 }
 
-export default memo(Content);
+export default Content;

@@ -1,7 +1,12 @@
 import { useState } from 'react';
+import { useSelector } from 'react-redux';
+
+import plusIcon from '../../assets/images/plus.svg';
 
 function Categories({ items, selectContent }) {
   const [activeId, setActiveId] = useState(null);
+  const isEdit = useSelector(state => state.edit.isEdit);
+  console.log(isEdit);
 
   const assignActiveId = (id) => {
     setActiveId(id);
@@ -29,6 +34,9 @@ function Categories({ items, selectContent }) {
             </li>)}
           </ul>
         </li>)}
+        {isEdit && <li className='category__item category__item--add'>
+          <img src={plusIcon} alt="plus-icon" />    
+        </li>}
       </ul>
     </div>
   )

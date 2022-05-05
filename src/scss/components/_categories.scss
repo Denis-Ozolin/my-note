@@ -36,6 +36,21 @@
       transform: translateX(25%);
       box-shadow: none;
     }
+
+    &--add{
+      display: flex;
+      justify-content: center;
+      box-sizing: border-box;
+
+      &:hover,
+      &:focus {
+        transform: none;
+        border: 1px solid $accentColor;
+        background-color: inherit;
+        -webkit-box-shadow: 4px 4px 15px 2px $darkTextColor;
+        box-shadow: 4px 4px 15px 2px $darkTextColor;
+      }
+    }
   }
 
   &__sublist {

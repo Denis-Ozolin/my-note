@@ -1,7 +1,6 @@
 @import '../variables';
 
 .button{
-  // border-color: $accentColor;
   border: none;
   outline: none;
   background-color: inherit;
@@ -16,10 +15,5 @@
     &:focus{
       transform: scale(1.2);
     }
-
-    // &:hover,
-    // &:focus{
-    //   transform: rotate(360deg);
-    // }
   }
 }
