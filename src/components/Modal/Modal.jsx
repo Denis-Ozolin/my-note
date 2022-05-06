@@ -2,7 +2,7 @@ import { useLayoutEffect } from 'react';
 
 function Modal({ children, closeModal }) {
   useLayoutEffect(() => {
-    function handleKeyDown(event) {
+    const handleKeyDown = (event) => {
       if (event.code === 'Escape') {
         closeModal();
       }

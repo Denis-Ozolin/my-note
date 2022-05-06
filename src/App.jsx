@@ -19,7 +19,7 @@ function App() {
       <div className="container">
         <section className='section'>
           <Categories items={categories} selectContent={onSelectContent} />
-          {!note? <DefaultContent/>: <Content content={note}/>}
+          {note && !isEdit? <Content content={note} />: <DefaultContent /> }
         </section>
       </div>
     </div>
