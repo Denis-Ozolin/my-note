@@ -26,6 +26,9 @@ function Categories({ items, selectContent }) {
           className='category__item'>
           {obj.name}
           <ul className={activeId === obj.id? 'category__sublist--active': 'category__sublist' }>
+                    {isEdit && <li className='category__item category__item--add'>
+            <img src={plusIcon} alt="plus-icon" />    
+          </li>}
             {obj.items.map(item => <li
               onClick={() => selectContent(item)}
               key={item.id}

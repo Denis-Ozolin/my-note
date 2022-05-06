@@ -7,13 +7,14 @@ import categories from './db.json';
 function App() {
   const dispatch = useDispatch();
   const note = useSelector(state => state.note.selectedCategory);
+  const isEdit = useSelector(state => state.edit.isEdit);
 
   const onSelectContent = (obj) => {
     dispatch(addCategory(obj));
   }
 
   return (
-    <div className="wrapper">
+    <div className={!isEdit? 'wrapper': 'wrapper--edit'}>
         <Header/>
       <div className="container">
         <section className='section'>

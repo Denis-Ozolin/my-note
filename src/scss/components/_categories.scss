@@ -40,13 +40,12 @@
     &--add{
       display: flex;
       justify-content: center;
-      box-sizing: border-box;
+      background-color: inherit;
 
       &:hover,
       &:focus {
         transform: none;
-        border: 1px solid $accentColor;
-        background-color: inherit;
+        background-color: $transparentBg;
         -webkit-box-shadow: 4px 4px 15px 2px $darkTextColor;
         box-shadow: 4px 4px 15px 2px $darkTextColor;
       }
