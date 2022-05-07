@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
 
-import { Modal, AddContent } from '../../components';
+import { Modal, CategoryInput, NoteInput } from '../../components';
 import plusIcon from '../../assets/images/plus.svg';
 
 function Categories({ items, selectContent }) {
@@ -60,8 +60,8 @@ function Categories({ items, selectContent }) {
       </ul>
       {isOpenModal &&
         <Modal closeModal={onCloseModal}>
-          {changeType === 'category' && <AddContent/>}
-          {changeType === 'note' && <AddContent/>}
+          {changeType === 'category' && <CategoryInput/>}
+          {changeType === 'note' && <NoteInput/>}
         </Modal>}
     </div>
   )

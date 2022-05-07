@@ -25,9 +25,9 @@ function Modal({ children, closeModal }) {
   return (
     <div className='modal'>
       <div onClick={handleBackdropClick} className='modal__backdrop'>
-        <div className='modal__window'>
+        {/* <div className='modal__window'> */}
           {children}
-        </div>
+        {/* </div> */}
       </div>
     </div>
   );
